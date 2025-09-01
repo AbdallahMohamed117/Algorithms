@@ -1,8 +1,8 @@
 public class Main {
         public static void main(String [] args) {
-            int l = 7;
-            int[] value = {0,1,10,13,18,20,31,32};
-            int max = dp.RodCutting.rod(value);
-            System.out.println(max);
+            int T = 47;
+            int[] sq = {1, 3, 4, 12, 19, 21, 22};
+            boolean isTrue = dp.SubsetSum.subsetSum(T,sq);
+            System.out.println(isTrue);
         }
 }
