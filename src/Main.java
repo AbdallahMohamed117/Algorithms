@@ -1,14 +1,17 @@
-import java.util.HashMap;
+import java.util.HashSet;
 public class Main {
         public static void main(String [] args) {
-            char [][] forest = {
-                    {'E', 'E', 'M', 'E', 'T'},
-                    {'T', 'E', 'T', 'M', 'E'},
-                    {'E', 'M', 'E', 'E', 'E'},
-                    {'E', 'T', 'E', 'M', 'E'},
-                    {'M', 'E', 'E', 'T', 'E'}
-            };
-            int paths = dp.PS8.plum(forest);
-            System.out.println(paths);
+            HashSet<String> p = new HashSet<>();
+            p.add("A");
+            p.add("CT");
+            p.add("TG");
+            p.add("ACTG");
+            String dna = "ACTG";
+
+            int k = 5;
+
+            int s = dp.PS9.proteinParsing(dna,p,k);
+
+            System.out.println(s);
         }
 }
