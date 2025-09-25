@@ -24,7 +24,7 @@ public class SkipList {
     }
 
     public Node insert(int v){}
-    public boolean exist(int v){
+    public Node exist(int v){
         Node n = head;
         while(n.below != null) {
             n = n.below;
@@ -32,7 +32,7 @@ public class SkipList {
                 n = n.next;
             }
         }
-        return n.value == v;
+        return n; //closest or same as v
     }
     public Node delete(int v) {}
 }
